@@ -1,0 +1,19 @@
+.pagination_div{
+   display:flex; 
+   gap: 20px; 
+   justify-content: center;
+   align-items: center;
+   margin: 50px;
+}
+
+.btn_next,.btn_prev{
+   padding: 5px 10px;
+   background-color: transparent;
+   color: white;
+   cursor: pointer;
+}
+
+.per_page_btn{
+   padding: 5px 10px;
+   cursor: pointer;
+}

@@ -1,0 +1,91 @@
+.signupdiv{
+    width:25%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: left;
+    box-shadow: rgb(66, 64, 64) 0px 0px 0px 2px, rgb(43, 41, 41) 0px 4px 6px -1px, rgb(43, 41, 41) 0px 1px 0px inset;
+    padding: 10px 30px 20px 30px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+.headingTag{
+    margin: auto;
+    margin-bottom: 10px;
+}
+.form{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form input{
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid lightgray;
+}
+input[type="submit"]{
+    background-color: #F7E300;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+label{
+    margin-bottom: -5px;
+    font-size: 15px;
+}
+
+.checkPassowrd{
+    margin-top: 10px;
+    font-size: 14px;
+    display: flex;
+    text-align: center;
+}
+
+.forgot{
+    cursor: pointer;
+}
+
+.forgot a{
+    text-decoration: none;
+    color: white;
+}
+
+.log_link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.label_sign{
+    margin-top: 10px;
+}
+
+.label_sign a{
+    text-decoration: none;
+    color:white;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logout_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.logout_btn{
+    width:200px;
+    background-color: transparent;
+    color:white;
+    padding: 10px 30px;
+    border: 1px solid white;
+    font-size: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}

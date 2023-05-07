@@ -1,0 +1,140 @@
+nav{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position : sticky;
+    z-index: 100;
+}
+.navbar_div{
+    width:80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+}
+.navbar_div img{
+    width:150px;
+}
+
+.search_div{
+    width:400px;
+    border: 1px solid rgb(75, 74, 74);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+    border-radius: 20px;
+}
+
+input[type="search"]{
+   background-color: transparent;
+   outline: none;
+   border: none;
+   width:95%;
+   color: white;
+}
+
+.navbar_div select{
+    background-color: transparent;
+    outline: none;
+    padding: 5px 15px;
+    color: #F7E300;
+    border-radius: 20px;
+    border: 1px solid #F7E300;
+    cursor: pointer;
+}
+
+.navbar_div select>option{
+    background-color: rgba(10, 8, 8, 0.35);
+}
+
+.select_sign{
+    display: flex;
+    gap:20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.signin_icon{
+    display: flex;
+    align-items: center;
+    gap:5px;   
+    cursor: pointer;
+}
+
+.signin_icon span{
+    font-size: 14px;
+}
+
+.signin_icon span a{
+    color: rgb(118, 117, 117);
+    text-decoration: none;
+}
+
+.drp_down{
+    position: relative;
+    display: inline-block;
+}
+.dropdown_content {
+    display: none;
+    position: absolute;
+    background-color:transparent;
+    border: 1px solid white;
+    min-width: 120px;
+    margin-top: 2px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown_content span{
+    color: white;
+    padding: 5px 10px;
+    display: block;
+    text-align: center;
+  }
+  .drop_down:hover .dropdown_content {
+    display: block
+  }
+/* -----------------navbar-routes------------------------------ */
+
+.navbar_routes{
+    width:80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px 0px 10px;  
+}
+.main_routes{
+    margin-left: 50px;
+    display: flex;
+    justify-content: flex-start;
+    gap:30px;
+    align-items: center;
+}
+
+.main_routes div{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: rgb(178, 177, 177);
+    font-size: 14px;
+    cursor: pointer;
+    padding-bottom: 15px ;
+}
+
+.main_routes div>select{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: rgb(178, 177, 177);
+    font-size: 14px; 
+}
+.main_routes div>select>option{
+    background-color: rgba(7, 7, 7, 0.35);
+    color: white;
+}
+
+.main_routes div:hover{
+    border-bottom: 3px solid #F7E300;
+    transition:ease;
+}

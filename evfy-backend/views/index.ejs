@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reset Password</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+        }
+        #form_div{
+            width:30%;
+            margin: auto;
+            margin-top: 80px;
+        }
+        input[type="password"]{
+            border-radius: 10px;
+            padding: 10px;
+
+        }
+        input[type="submit"]{
+            border-radius: 10px;
+            padding: 10px;
+            background-color: #F7E300;
+            border: none;
+            outline: none;
+        }
+    </style>
+    <script>
+        var status = '<%- JSON.stringify(status) %>';
+
+        if (JSON.parse(status) == "Verified") {
+            if (confirm("Do u want to login?")) {
+                window.location.href = "https://evfy-app.vercel.app/";
+            }
+        }
+        else  if(JSON.parse(status) == "password and confirm_password not match"){
+            alert(JSON.parse(status))
+        }
+    </script>
+</head>
+
+<body>
+    <div id="form_div">
+        <h1>
+            <%= email%>
+        </h1>
+        <form action="" method="post">
+            <input type="password" name="password" id="password" placeholder="password" /><br />
+            <input type="password" name="confirm_password" id="confirm_password" placeholder="confirm_password" /><br />
+            <input type="submit" value="submit" />
+        </form>
+    </div>
+</body>
+
+</html>

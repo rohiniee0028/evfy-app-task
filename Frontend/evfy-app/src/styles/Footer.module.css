@@ -1,0 +1,17 @@
+.footer_div{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+.footer_div>div>ul>li{
+    list-style: none;
+    font-size: 14px;
+    color:rgb(106, 105, 105);
+}
+.footer_div>div>ul>li:nth-child(1){
+    margin-bottom: 10px;
+    color:rgb(200, 197, 197);
+}
