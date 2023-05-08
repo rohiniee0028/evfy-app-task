@@ -55,11 +55,11 @@ export const Login = () => {
             <form onSubmit={handleLogin} className={styles.form}>
                 <label>Email:</label>
                 <br />
-                <input type="email" id="email" name="email" placeholder="enter email" value={form.email} onChange={(e) => handleInput(e)} />
+                <input type="email" id="email" name="email" placeholder="enter email" value={form.email} onChange={(e) => handleInput(e)} required/>
                 <br />
                 <label>Password:</label>
                 <br />
-                <input type={show ? "text" : "password"} name="password" value={form.password} id="password" placeholder="enter password" onChange={(e) => handleInput(e)} />
+                <input type={show ? "text" : "password"} name="password" value={form.password} id="password" placeholder="enter password" onChange={(e) => handleInput(e)} required/>
                 <span className={styles.checkPassowrd}><input type="checkbox" onChange={togglePassword} />show password</span>
                 <br />
                 <div className={styles.log_link}>

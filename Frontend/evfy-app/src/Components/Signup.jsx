@@ -71,24 +71,24 @@ export const Signup = () => {
             <form onSubmit={handleSignup} className={styles.form}>
                 <label>First name:</label>
                 <br />
-                <input type="text" id="fname" name="fname" value={form.fname} placeholder="enter firstname" onChange={(e) => handleInput(e)} />
+                <input type="text" id="fname" name="fname" value={form.fname} placeholder="enter firstname" onChange={(e) => handleInput(e)}required/>
                 <br />
                 <label>Last name:</label>
                 <br />
-                <input type="text" id="lname" name="lname" value={form.lname} placeholder="enter lastname" onChange={(e) => handleInput(e)} />
+                <input type="text" id="lname" name="lname" value={form.lname} placeholder="enter lastname" onChange={(e) => handleInput(e)} required/>
                 <br />
                 <label>Email:</label>
                 <br />
-                <input type="email" id="email" name="email" placeholder="enter email" value={form.email} onChange={(e) => handleInput(e)} />
+                <input type="email" id="email" name="email" placeholder="enter email" value={form.email} onChange={(e) => handleInput(e)} required/>
                 <br />
                 <label>Password:</label>
                 <br />
-                <input type={show ? "text" : "password"} name="password" value={form.password} id="password" placeholder="enter password" onChange={(e) => handleInput(e)} />
+                <input type={show ? "text" : "password"} name="password" value={form.password} id="password" placeholder="enter password" onChange={(e) => handleInput(e)} required />
                 <span className={styles.checkPassowrd}><input type="checkbox" onChange={togglePassword} />show password</span>
                 <br />
                 <label>Mobile No.:</label>
                 <br />
-                <input type="mobile" id="mobile" name="mobile" placeholder="enter mobile" value={form.mobile} onChange={(e) => handleInput(e)} />
+                <input type="mobile" id="mobile" name="mobile" placeholder="enter mobile" value={form.mobile} onChange={(e) => handleInput(e)} required/>
                 <br />
                 <input type="submit" value="Signup" />
                 <label className={styles.label_sign}><Link to="/login">Login ?</Link></label>

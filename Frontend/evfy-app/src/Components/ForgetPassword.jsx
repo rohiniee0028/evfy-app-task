@@ -35,7 +35,7 @@ export const ForgetPassword = () => {
             <h2 className={styles.headingTag}>Forgot Password</h2>
             <br/>
             <form onSubmit={handleSubmit} className={styles.form}>
-                <input type="email" id="email" placeholder="enter email" value={email} onChange={(e) => setEmail(e.target.value)} />
+                <input type="email" id="email" placeholder="enter email" value={email} onChange={(e) => setEmail(e.target.value)} required/>
                 <br/>
                 <input type="submit" value="Submit" />
                 <label><Link to="/signup">Register ?</Link></label>
